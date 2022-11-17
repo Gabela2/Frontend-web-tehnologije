@@ -1,0 +1,29 @@
+/* Prepravke sa prethodne spirale */
+
+Primjetio sam da kad se klikne na div sa nazivom vjezba treba da se poveća visina tog diva,
+a da visine ostalih div elemenata za vjezbe ostanu iste. Kod mene se nije mijenjala. Plus, ako vježba sadrži više
+od 5 zadataka, zbog visine koja se ne povećava taj div prelazi preko ostalih div vježbi i izgleda ružno.
+Da otklonim taj problem uradio sam sljedeće:
+Izbacio sam div okvir, jer je bespotreban. I svakako šaljem funkciji div sa klasom "vjezba" da u 
+njega dopuni div sa ostalim zadacima koji je već sadržan u divu okvir. Tako da nisam vidio razlog zašto
+sam stavio taj div ikako. 
+Na tako primljen div vježba kojem će biti dodat div sa zadacima lakše je manipulisati sa njim i promijeniti mu visinu.
+Promijenio sam visinu tako što sam dodao novu klasu sa novom visinom.
+
+Plus kada sam određivao visinu diva koji sadrži zadatke, provjerio sam da li je broj vježbi veći od 5, ako jeste,
+onda neka taj div ima visnu veću od ostalih, kako bi to sve moglo lijepo stati i uklopiti se.
+
+Također bilo je i promjena u css fajlu. Klasu okvir obrisao, a dodao klasu sa novom visinom. 
+Plus na veliki div u kome su sve vjezbe dodao visinu i stavio na auto.
+
+/* Verzija spirala3a.js */
+ 
+Kod nje sam u funkciji iscrtajZadatke u for petlji izmjenio uslov for petlje umjesto i >= brojVjezbi,
+stavio sam i > brojVjezbi. To sam uradio iz razloga što u ovom slučaju indeksacija ide od 1, a svakome se može
+desiti da slučajno u brzini, nehotice, ne uključi gornju granicu, kada stavi indeksaciju od 1, a radi sa nizovima.
++ minimalna je izmjena kao i što se traži. :)
+
+/* Verzija spirala3b.js */
+
+Obrisao sam uslov u slučaju da se desi da se pošalju neispravni ulazni podaci.
+
