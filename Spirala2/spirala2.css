@@ -1,0 +1,97 @@
+body{
+  background-image: url(Slike/tum.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#main{
+  width:95%;
+  margin-left: 2.5em;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  grid-template-areas:
+  "nav nav"
+  "studenti grupe";
+  grid-gap:1rem;
+}
+nav{
+  background-image: url(Slike/slika.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  grid-area:nav;
+  text-align: center;
+}
+h1{
+ font-size: 30pt;
+}
+nav a{
+  float: left;
+  margin-left: 3em;
+}
+.stud{
+  background-image: url(Slike/slika.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  grid-area:studenti;
+}
+.stud1{
+  margin-top:1.8em;
+}
+.stud table{
+  margin-top: 22px;
+  margin-left: 22px;
+  display:inline-block;
+  position: relative;
+}
+.grupe{
+  background-image: url(Slike/slika.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  grid-area:grupe;
+
+}
+.grupe table{
+   display: flex;
+   justify-content: center;
+   margin: 12px 0px;
+}
+table{
+  align-items: center;
+  display: inline-block;
+}
+table td,th{
+  text-align: left;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 600px){
+  #main{
+    margin-left: 0em;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.3fr;
+    grid-template-areas:
+    "nav"
+    "studenti"
+    "grupe";
+  }
+  .stud1{
+    margin-top: 0px;
+  }
+  .stud{
+    width: 100%;
+  }
+  .stud table{
+    display:flex ;
+    justify-content: center;
+    margin: 10px 0px;;
+    }
+  nav {
+    text-align: center;
+  }
+}

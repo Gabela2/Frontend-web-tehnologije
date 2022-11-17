@@ -1,0 +1,10 @@
+Spiralu 2 sam radio ispočetka dakle nisam ispravljao spiralu 1, iz razloga sto sam u međuvremeno naucio mnogo efikasniji nacin za izradu spirale.
+Promjene koje su se desile u spirali 2 su sljedece:
+Za izgled spirale sam koristio gridove pomoću kojih sam raspoređivao elemente na sajtu.
+Za mobilni prikaz spirale sam koristio media query koji sam podesio na sljedeći način:
+Za max-width screen-a sam postavio 600px i pomocu grid-areas rasporedio elemente na spirali tako da bez ikakvih problema stanu na tu rezoluciju sajta.
+U media query sam smanjio broj kolona tacnije postavio sam da bude samo jedna kolona i redova onoliko koliko elemenata sam trebao da rasporedim.
+Za vjezbu mojrepozitorij sam koristio display:flex; iz razloga što imamo samo jedan element koji treba da pomjerimo prilikom promjene rezolucije.
+Velicinu slika sam deklarisao u postotcima tako da pri promjeni rezolucije stranice njihova velicina se smanjuje ili povecava.
+U izgledu spirale su se desile jako male promjene kao što su pozadina i veličina pojedinih elemenata i naravno responzivnost stranice,
+elementi su raspoređeni isto kao u prvoj spirali tačnije onako kako je traženo od nas.
